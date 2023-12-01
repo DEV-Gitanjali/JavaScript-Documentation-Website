@@ -1,51 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+/* */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-html, body{
-    font-family: "roboto",sans-serif;
-    font-weight: 300;
-    line-height: 1.4;
-    scroll-behavior: smooth;
+/* this line for html and body  */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+/* this line for a  */
+a {
+  text-decoration: none;
+}
+/* this line for body */
+body {
+  display: flex;
+  gap: 10px;
+}
+/* this line for header tag */
+header {
+  border: 1px solid #ccc;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
-a{
-    text-decoration: none;
+/* this line for nav */
+nav {
+  /* padding: 20px 10px; */
+}
+/* this line for nav h1 */
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/* this line for nav ul li */
+nav ul {
+  list-style: none;
+}
+/* this line for nav ul li */
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  color: black;
+}
+/* this line for nav ul li:hover */
+nav ul li:hover {
+  background: #ccc;
+  transition: 0.3s ease-in-out;
 }
 
-body{
+/* Main Section */
 
-    display: flex;
-
-
+main {
+  padding: 50px;
+}
+/* this line for section */
+section {
+  margin-bottom: 50px;
+  scroll-margin: 50px;
+}
+/* this line for section article */
+section article {
+  max-width: 1200px;
+  font-size: 14px;
 }
 
-header{
-
-    border: 1px solid rgb(249, 243, 243);
-    height: 100vh;
-    
-
+/* this line for section h2 */
+section h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+/* this line for section article */
+section article {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* this line for section article ul */
+section article ul {
+  margin-left: 20px;
 }
 
-nav h1{
-    font-size: 25px;
-    font-weight: 500;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+/* this line for section article ul li */
+section article ul li {
+  margin-bottom: 10px;
 }
-
-nav ul{
-    list-style: none;
-
+/* this line for article p */
+section article p {
+  font-size: 14px;
+  line-height: 1.6;
 }
-nav ul li{
-    padding-bottom: 1px solid#ccc;
-    padding: 10px;
-    color: black;
+/* this line for code */
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* this line for media  */
+@media(max-width:480px){
+    body{
+        flex-direction: column;
+        
+    }
+
+    header{
+        height: 200px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+
+    }
+
 
 }
